@@ -10,6 +10,8 @@ RUN sed -i 's/upload_max_filesize = .*/upload_max_filesize = 20M/' /etc/php/7.0/
 
 RUN sed -i '/http {/a  \ \ \ \ \ \ \ \ client_max_body_size 20M; #allow file upload up to that limit' /etc/nginx/nginx.conf
 
+ADD PingPongCockpit/ /var/www/html/
+
 EXPOSE 80 3306
 
 CMD ["supervisord"]

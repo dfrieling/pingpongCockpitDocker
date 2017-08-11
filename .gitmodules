@@ -1,0 +1,3 @@
+[submodule "PingPongCockpit"]
+	path = PingPongCockpit
+	url = https://github.com/dfrieling/PingPongCockpit.git
